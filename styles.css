@@ -177,18 +177,6 @@
     font-style: var(--text-medium-normal-font-style);
   }
   
-  .home .actions {
-    all: unset;
-    box-sizing: border-box;
-    display: inline-flex;
-    border: 1px solid;
-    border-color: #000000;
-    align-items: flex-start;
-    gap: 16px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
   .home .button {
     all: unset;
     box-sizing: border-box;
@@ -915,10 +903,41 @@
     flex-direction: column;
   }
 
+  .home .content,
+  .home .content-2,
+  .home .medium-length-hero,
+  .home .lorem-ipsum-dolor,
+  .home .text-suspendisse,
+  .home .text-2,
+  .home .text,
+  .home .heading,
+  .home .heading-2 {
+    text-align: center !important;
+  }
+
+  .promotion-container{
+    width: 90%;
+    height: auto;
+    margin: auto 0;
+  }
+
+  .home .column-3{
+    width: 90%;
+    height: auto;
+  }
+
+  .home .column-3 .p{
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
   .home .column-2 {
     width: 100% !important;
     padding: 0 1rem;
     gap: 16px;
+  }
+
+  .text-suspendisse{
+    font-size: clamp(1.5rem, 3vw, 3rem);
   }
 
   .home .div-2 {
@@ -951,7 +970,7 @@
   .home .button, .home .button-2, .home .button-3, .home .button-4, .home .button-5, .home .actions {
     width: 100% !important;
     padding: 1rem !important;
-    font-size: 1.1rem !important;
+    font-size: clamp(1rem, 2vw, 1.5rem) !important;
   }
 
   .home .text-input {
@@ -970,11 +989,11 @@
   }
 
   .home .heading, .home .heading-2, .home .medium-length-hero {
-    font-size: 1.5rem !important;
+    font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
   }
 
   .home .lorem-ipsum-dolor, .home .text-suspendisse, .home .text-2, .home .text {
-    font-size: 0.9rem !important;
+    font-size: clamp(1rem, 2vw, 1.5rem) !important;
   }
 
   .home .navbar {
@@ -1017,24 +1036,24 @@
 
 @media (max-width: 480px) {
   .home .medium-length-hero {
-    font-size: 1.2rem !important;
+    font-size: clamp(1.2rem, 4vw, 2rem) !important;
   }
 
   .home .heading, .home .heading-2 {
-    font-size: 1.2rem !important;
+    font-size: clamp(1.2rem, 3vw, 1.8rem) !important;
   }
 
   .home .lorem-ipsum-dolor, .home .text-suspendisse, .home .text-2, .home .text {
-    font-size: 0.8rem !important;
+    font-size: clamp(1rem, 2vw, 1.2rem) !important;
   }
 
   .home .button, .home .button-2, .home .button-3, .home .button-4, .home .button-5, .home .actions {
-    font-size: 1rem !important;
-    padding: 0.75rem !important;
+    font-size: clamp(1rem, 2vw, 1.2rem) !important;
+    padding: 1rem !important;
   }
 
   .home .form {
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
   }
 }
   
